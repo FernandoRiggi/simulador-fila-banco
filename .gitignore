@@ -1,0 +1,24 @@
+---
+
+## Arquivo `.gitignore`
+
+Este `.gitignore` vai garantir que os arquivos gerados pela compilação (arquivos objeto e o executável) e algumas configurações de IDE comuns não sejam adicionados ao seu repositório Git.
+
+Crie um arquivo chamado **`.gitignore`** (com o ponto na frente) na raiz do seu projeto e cole o seguinte conteúdo:
+
+```gitignore
+# Arquivos gerados pela compilação
+*.o
+*.out
+*.exe
+bank_simulator # Nome do seu executável
+
+# Arquivos de backup e temporários
+*~
+#*#
+.#*
+
+# Arquivos de IDEs e ferramentas de desenvolvimento
+.vscode/        # Ignora a pasta .vscode inteira
+.DS_Store       # macOS
+Thumbs.db       # Windows
