@@ -31,30 +31,34 @@ O programa recebe comandos via entrada padrão:
 * `s`: Simula a liberação de um caixa, chamando o próximo cliente da fila conforme as regras de atendimento.
 * `f`: Sinaliza o encerramento do expediente do banco. Todos os clientes restantes nas filas são atendidos (sem as restrições da regra dos 3 prioritários para esvaziamento final), e a ordem em que todos os clientes foram atendidos durante o expediente é impressa.
 
+
 ### Exemplo de Entrada e Saída:
 
+
 **Entrada:**
-g Rodrigo
-g Bia
-p Joel
-s
-g Fatima
-p Frederico
-p Luciana
-s
-s
-p Fabiana
-p Elen
-p Fabio
-g Valter
-s
-s
-s
-s
-s
-s
-s
-f
+```
+    g Rodrigo
+    g Bia
+    p Joel
+    s
+    g Fatima
+    p Frederico
+    p Luciana
+    s
+    s
+    p Fabiana
+    p Elen
+    p Fabio
+    g Valter
+    s
+    s
+    s
+    s
+    s
+    s
+    s
+    f
+``` 
 **Saída esperada:**
 Joel, Frederico, Luciana, Rodrigo, Fabiana, Elen, Fabio, Bia, Fatima, Valter
 ## Como Compilar e Executar
@@ -63,14 +67,14 @@ Para compilar o projeto, navegue até o diretório raiz do projeto no seu termin
 
 ```bash
 make
-
+```
 Isso criará um executável chamado bank_simulator.
 
-Para executar o programa, você pode fornecer a entrada de duas maneiras:
-
-    Interativamente (digitando os comandos):
-    Bash
-
+Para executar o programa, rode:
+```bash
 ./bank_simulator
-
-O programa pedirá os comandos e nomes.
+```
+O programa aceitará comandos diretamente pelo terminal. Digite os comandos conforme os exemplos da seção de Entrada e Saída, pressionando Enter após cada um. Quando quiser encerrar o expediente e ver a saída final, digite:
+```bash
+f
+```
