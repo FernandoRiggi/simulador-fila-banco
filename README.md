@@ -4,6 +4,7 @@ Este repositório contém um programa em C que simula uma fila de banco com duas
 
 ## Integrantes do Grupo:
 * Fernando Souza De Riggi
+* Filipe Gioanini Braga
 
 ## Descrição do Trabalho
 
